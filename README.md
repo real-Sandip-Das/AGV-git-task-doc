@@ -30,6 +30,10 @@ Screenshots:
 
 3: Modifying Files, Committing Changes(with SSH Signing, the '-S' flag that results in the green 'Verified' sign being shown while my commit is viewed on github.com), Pushing to remote
 
+(like this:)
+
+![Verified](Images/Task%201/Verified.png)
+
 ![4. Creating the pull request(again, using the GitHub CLI)](Images/Task%201/PullReq.png)
 
 4: Creating the pull request(again, using the GitHub CLI)
