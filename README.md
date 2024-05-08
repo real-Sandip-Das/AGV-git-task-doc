@@ -45,6 +45,7 @@ Solution:
 ```bash
 git remote add origin https://github.com/real-Sandip-Das/AGV-git-task.git
 git remote -v
+#TODO: complete the task
 ```
 
 Configuring remote:
@@ -91,4 +92,32 @@ git reset --hard Task4^
 Solution:
 
 ```bash
+git checkout -b "Task5"
+vim main.cpp
+git add .
+git commit -S -m "Added dummy code, first time"
+vim main.cpp
+git add . && git commit -S -m "Added dummy code, second time"
+vim main.cpp
+git add . && git commit -S -m "Added dummy code, third time"
+vim main.cpp
+git add . && git commit -S -m "Added dummy code, fourth time"
+vim main.cpp
+git add . && git commit -S -m "Added dummy code, fifth time"
+vim main.cpp
+git add . && git commit -S -m "Added dummy code, sixth time"
+git rebase --interactive Task5~6
+#drop second and fourth commits in the text editor
+#merge conflicts if asked to
+
+git push origin Task5
+gh pr create --base main --head real-Sandip-Das:Task5 --title "Task5: Added dummy code multiple times and removed the 2nd and 4th commits (Sandip Das)" --body "Added Dummy code six times and removed(a.k.a. 'drop'ped) the second and fourth commits using Interactive Rebase"
 ```
+
+Selecting commits in vim: \
+![Vim initial](Images/Task%205/vim_initial.png) \
+![Vim Final](Images/Task%205/vim_final.png)
+
+Screenshots of terminal: \
+![Terminal](Images/Task%205/task5terminal.png) \
+![Terminal 2](Images/Task%205/task5terminal2.png)
