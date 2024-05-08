@@ -39,3 +39,41 @@ Screenshots:
 4: Creating the pull request(again, using the GitHub CLI)
 
 ## Task 2
+
+Solution:
+
+```bash
+git remote add origin https://github.com/real-Sandip-Das/AGV-git-task.git
+git remote -v
+```
+
+Configuring remote:
+![Adding remote](Images/Task%202/adding_remote.png)
+
+## Task 3
+
+Solution:
+
+```bash
+
+git fetch upstream
+git checkout main
+git merge upstream/main
+git push origin main
+git checkout -b "Task3"
+vim dummy-main.cpp #added some dummy code
+git add .
+git commit -S -m "Added some code, hope it works and passes all the Tests😁"
+git revert Task3 #GNU Nano opens up for editing the commit message
+git push origin Task3
+gh pr create --base main --head real-Sandip-Das:Task3 --title "Task3: Sandip Das" --body "Pull request for Task 3"
+```
+
+![Screenshot](Images/Task%202/image.png)
+
+## Task 4
+
+Solution:
+
+```bash
+```
