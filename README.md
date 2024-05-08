@@ -76,4 +76,19 @@ gh pr create --base main --head real-Sandip-Das:Task3 --title "Task3: Sandip Das
 Solution:
 
 ```bash
+git checkout -b "Task4"
+vim dummy-main.cpp #Added some stupid code
+git add .
+git commit -S -m "Added a new file!"
+#Now realized that I've done something stupid
+git reset --hard Task4^
+```
+
+![Screenshot](Images/Task%204/image.png)
+
+## Task 5
+
+Solution:
+
+```bash
 ```
