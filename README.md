@@ -30,9 +30,20 @@ Screenshots:
 
 3: Modifying Files, Committing Changes(with SSH Signing, the '-S' flag that results in the green 'Verified' sign being shown while my commit is viewed on github.com), Pushing to remote
 
-(like this:)
+(with SSH signing, my commit will look like this:)
 
 ![Verified](Images/Task%201/Verified.png)
+
+by the way, I found out early on that git installed from Ubuntu Focal's software repositories doesn't support SSH signing \
+due to the version being an older one([Proof](https://packages.ubuntu.com/focal/vcs/git))
+
+So, I installed a newer version of git using this:
+
+```bash
+sudo add-apt-repository ppa:git-core/ppa -y
+sudo apt-get update
+sudo apt-get upgrade
+```
 
 ![4. Creating the pull request(again, using the GitHub CLI)](Images/Task%201/PullReq.png)
 
