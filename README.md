@@ -56,7 +56,6 @@ Configuring remote:
 Solution:
 
 ```bash
-
 git fetch upstream
 git checkout main
 git merge upstream/main
@@ -92,6 +91,11 @@ git reset --hard Task4^
 Solution:
 
 ```bash
+git checkout main
+git fetch upstream
+git merge upstream/main
+git push origin main
+
 git checkout -b "Task5"
 vim main.cpp
 git add .
